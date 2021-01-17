@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+docker run -d --name qbt --cap-add net_admin --cap-add sys_module --privileged --dns=193.138.218.74 -v /home/erik/docker/wireguard-qbittorrent/container_data/.config:/root/.config/ -v /home/erik/docker/wireguard-qbittorrent/container_data/.local:/root/.local/ -v /home/erik/docker/wireguard-qbittorrent/container_data/Wireguard:/root/Wireguard -v /mnt/local/:/root/Downloads -p 8088:8088 $1
